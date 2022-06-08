@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E01D178B2850371100BC74BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D178A2850371100BC74BA /* AppDelegate.m */; };
+		E01D178E2850371100BC74BA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D178D2850371100BC74BA /* SceneDelegate.m */; };
+		E01D17912850371100BC74BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D17902850371100BC74BA /* ViewController.m */; };
+		E01D17942850371100BC74BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01D17922850371100BC74BA /* Main.storyboard */; };
+		E01D17962850371300BC74BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01D17952850371300BC74BA /* Assets.xcassets */; };
+		E01D17992850371300BC74BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01D17972850371300BC74BA /* LaunchScreen.storyboard */; };
+		E01D179C2850371300BC74BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D179B2850371300BC74BA /* main.m */; };
+		E01D17AA28503D4C00BC74BA /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D17A928503D4C00BC74BA /* NotificationService.m */; };
+		E01D17AE28503D4C00BC74BA /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E01D17A628503D4C00BC74BA /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E01D17B528503F0E00BC74BA /* ZBLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D17B328503F0E00BC74BA /* ZBLocalNotification.m */; };
+		E01D17BA2850A3DA00BC74BA /* MSYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D17B92850A3DA00BC74BA /* MSYHomeViewController.m */; };
+		E01D17C52850A74100BC74BA /* XLFoldLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D17C02850A74000BC74BA /* XLFoldLabel.m */; };
+		E01D17C62850A74100BC74BA /* XLFoldClockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D17C22850A74000BC74BA /* XLFoldClockItem.m */; };
+		E01D17C72850A74100BC74BA /* XLFoldClock.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D17C42850A74000BC74BA /* XLFoldClock.m */; };
+		E01D17CB2850A7B800BC74BA /* MSYClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D17CA2850A7B800BC74BA /* MSYClockViewController.m */; };
+		E01D17CE2850A7C600BC74BA /* MSYClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E01D17CD2850A7C600BC74BA /* MSYClockView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E01D17AC28503D4C00BC74BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E01D177E2850371100BC74BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E01D17A528503D4C00BC74BA;
+			remoteInfo = NotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E01D17B228503D4C00BC74BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E01D17AE28503D4C00BC74BA /* NotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E01D17862850371100BC74BA /* VoiceRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01D17892850371100BC74BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E01D178A2850371100BC74BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E01D178C2850371100BC74BA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E01D178D2850371100BC74BA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		E01D178F2850371100BC74BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E01D17902850371100BC74BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E01D17932850371100BC74BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E01D17952850371300BC74BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E01D17982850371300BC74BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E01D179A2850371300BC74BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E01D179B2850371300BC74BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E01D17A628503D4C00BC74BA /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01D17A828503D4C00BC74BA /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		E01D17A928503D4C00BC74BA /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		E01D17AB28503D4C00BC74BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E01D17B328503F0E00BC74BA /* ZBLocalNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBLocalNotification.m; sourceTree = "<group>"; };
+		E01D17B428503F0E00BC74BA /* ZBLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBLocalNotification.h; sourceTree = "<group>"; };
+		E01D17B82850A3DA00BC74BA /* MSYHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYHomeViewController.h; sourceTree = "<group>"; };
+		E01D17B92850A3DA00BC74BA /* MSYHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYHomeViewController.m; sourceTree = "<group>"; };
+		E01D17BF2850A74000BC74BA /* XLFoldClockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFoldClockItem.h; sourceTree = "<group>"; };
+		E01D17C02850A74000BC74BA /* XLFoldLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFoldLabel.m; sourceTree = "<group>"; };
+		E01D17C12850A74000BC74BA /* XLFoldClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFoldClock.h; sourceTree = "<group>"; };
+		E01D17C22850A74000BC74BA /* XLFoldClockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFoldClockItem.m; sourceTree = "<group>"; };
+		E01D17C32850A74000BC74BA /* XLFoldLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFoldLabel.h; sourceTree = "<group>"; };
+		E01D17C42850A74000BC74BA /* XLFoldClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFoldClock.m; sourceTree = "<group>"; };
+		E01D17C92850A7B800BC74BA /* MSYClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYClockViewController.h; sourceTree = "<group>"; };
+		E01D17CA2850A7B800BC74BA /* MSYClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYClockViewController.m; sourceTree = "<group>"; };
+		E01D17CC2850A7C600BC74BA /* MSYClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYClockView.h; sourceTree = "<group>"; };
+		E01D17CD2850A7C600BC74BA /* MSYClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYClockView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E01D17832850371100BC74BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01D17A328503D4C00BC74BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E01D177D2850371100BC74BA = {
+			isa = PBXGroup;
+			children = (
+				E01D17882850371100BC74BA /* VoiceRemind */,
+				E01D17A728503D4C00BC74BA /* NotificationServiceExtension */,
+				E01D17872850371100BC74BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E01D17872850371100BC74BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E01D17862850371100BC74BA /* VoiceRemind.app */,
+				E01D17A628503D4C00BC74BA /* NotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E01D17882850371100BC74BA /* VoiceRemind */ = {
+			isa = PBXGroup;
+			children = (
+				E01D17892850371100BC74BA /* AppDelegate.h */,
+				E01D178A2850371100BC74BA /* AppDelegate.m */,
+				E01D178C2850371100BC74BA /* SceneDelegate.h */,
+				E01D178D2850371100BC74BA /* SceneDelegate.m */,
+				E01D17BB2850A49E00BC74BA /* Common */,
+				E01D17B62850A3A700BC74BA /* Feature */,
+				E01D17B428503F0E00BC74BA /* ZBLocalNotification.h */,
+				E01D17B328503F0E00BC74BA /* ZBLocalNotification.m */,
+				E01D178F2850371100BC74BA /* ViewController.h */,
+				E01D17902850371100BC74BA /* ViewController.m */,
+				E01D17922850371100BC74BA /* Main.storyboard */,
+				E01D17952850371300BC74BA /* Assets.xcassets */,
+				E01D17972850371300BC74BA /* LaunchScreen.storyboard */,
+				E01D179A2850371300BC74BA /* Info.plist */,
+				E01D179B2850371300BC74BA /* main.m */,
+			);
+			path = VoiceRemind;
+			sourceTree = "<group>";
+		};
+		E01D17A728503D4C00BC74BA /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E01D17A828503D4C00BC74BA /* NotificationService.h */,
+				E01D17A928503D4C00BC74BA /* NotificationService.m */,
+				E01D17AB28503D4C00BC74BA /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		E01D17B62850A3A700BC74BA /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				E01D17C82850A7A400BC74BA /* Clock */,
+				E01D17B72850A3B600BC74BA /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		E01D17B72850A3B600BC74BA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E01D17B82850A3DA00BC74BA /* MSYHomeViewController.h */,
+				E01D17B92850A3DA00BC74BA /* MSYHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E01D17BB2850A49E00BC74BA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E01D17BC2850A4FE00BC74BA /* Legacy */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E01D17BC2850A4FE00BC74BA /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				E01D17BD2850A50700BC74BA /* Utils */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
+		E01D17BD2850A50700BC74BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E01D17BE2850A74000BC74BA /* XLFoldClock */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E01D17BE2850A74000BC74BA /* XLFoldClock */ = {
+			isa = PBXGroup;
+			children = (
+				E01D17C12850A74000BC74BA /* XLFoldClock.h */,
+				E01D17C42850A74000BC74BA /* XLFoldClock.m */,
+				E01D17BF2850A74000BC74BA /* XLFoldClockItem.h */,
+				E01D17C22850A74000BC74BA /* XLFoldClockItem.m */,
+				E01D17C32850A74000BC74BA /* XLFoldLabel.h */,
+				E01D17C02850A74000BC74BA /* XLFoldLabel.m */,
+			);
+			path = XLFoldClock;
+			sourceTree = "<group>";
+		};
+		E01D17C82850A7A400BC74BA /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				E01D17C92850A7B800BC74BA /* MSYClockViewController.h */,
+				E01D17CA2850A7B800BC74BA /* MSYClockViewController.m */,
+				E01D17CC2850A7C600BC74BA /* MSYClockView.h */,
+				E01D17CD2850A7C600BC74BA /* MSYClockView.m */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E01D17852850371100BC74BA /* VoiceRemind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E01D179F2850371300BC74BA /* Build configuration list for PBXNativeTarget "VoiceRemind" */;
+			buildPhases = (
+				E01D17822850371100BC74BA /* Sources */,
+				E01D17832850371100BC74BA /* Frameworks */,
+				E01D17842850371100BC74BA /* Resources */,
+				E01D17B228503D4C00BC74BA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E01D17AD28503D4C00BC74BA /* PBXTargetDependency */,
+			);
+			name = VoiceRemind;
+			productName = VoiceRemind;
+			productReference = E01D17862850371100BC74BA /* VoiceRemind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E01D17A528503D4C00BC74BA /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E01D17AF28503D4C00BC74BA /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				E01D17A228503D4C00BC74BA /* Sources */,
+				E01D17A328503D4C00BC74BA /* Frameworks */,
+				E01D17A428503D4C00BC74BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationServiceExtension;
+			productName = NotificationServiceExtension;
+			productReference = E01D17A628503D4C00BC74BA /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E01D177E2850371100BC74BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					E01D17852850371100BC74BA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					E01D17A528503D4C00BC74BA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = E01D17812850371100BC74BA /* Build configuration list for PBXProject "VoiceRemind" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E01D177D2850371100BC74BA;
+			productRefGroup = E01D17872850371100BC74BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E01D17852850371100BC74BA /* VoiceRemind */,
+				E01D17A528503D4C00BC74BA /* NotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E01D17842850371100BC74BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01D17992850371300BC74BA /* LaunchScreen.storyboard in Resources */,
+				E01D17962850371300BC74BA /* Assets.xcassets in Resources */,
+				E01D17942850371100BC74BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01D17A428503D4C00BC74BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E01D17822850371100BC74BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01D17CE2850A7C600BC74BA /* MSYClockView.m in Sources */,
+				E01D17C72850A74100BC74BA /* XLFoldClock.m in Sources */,
+				E01D17CB2850A7B800BC74BA /* MSYClockViewController.m in Sources */,
+				E01D17C62850A74100BC74BA /* XLFoldClockItem.m in Sources */,
+				E01D17912850371100BC74BA /* ViewController.m in Sources */,
+				E01D17B528503F0E00BC74BA /* ZBLocalNotification.m in Sources */,
+				E01D17C52850A74100BC74BA /* XLFoldLabel.m in Sources */,
+				E01D178B2850371100BC74BA /* AppDelegate.m in Sources */,
+				E01D17BA2850A3DA00BC74BA /* MSYHomeViewController.m in Sources */,
+				E01D179C2850371300BC74BA /* main.m in Sources */,
+				E01D178E2850371100BC74BA /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01D17A228503D4C00BC74BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01D17AA28503D4C00BC74BA /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E01D17AD28503D4C00BC74BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E01D17A528503D4C00BC74BA /* NotificationServiceExtension */;
+			targetProxy = E01D17AC28503D4C00BC74BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E01D17922850371100BC74BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E01D17932850371100BC74BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E01D17972850371300BC74BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E01D17982850371300BC74BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E01D179D2850371300BC74BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E01D179E2850371300BC74BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E01D17A02850371300BC74BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SQN84YY35D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceRemind/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FancyPower.VoiceRemind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E01D17A12850371300BC74BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SQN84YY35D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceRemind/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FancyPower.VoiceRemind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E01D17B028503D4C00BC74BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SQN84YY35D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FancyPower.VoiceRemind.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E01D17B128503D4C00BC74BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SQN84YY35D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FancyPower.VoiceRemind.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E01D17812850371100BC74BA /* Build configuration list for PBXProject "VoiceRemind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E01D179D2850371300BC74BA /* Debug */,
+				E01D179E2850371300BC74BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E01D179F2850371300BC74BA /* Build configuration list for PBXNativeTarget "VoiceRemind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E01D17A02850371300BC74BA /* Debug */,
+				E01D17A12850371300BC74BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E01D17AF28503D4C00BC74BA /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E01D17B028503D4C00BC74BA /* Debug */,
+				E01D17B128503D4C00BC74BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E01D177E2850371100BC74BA /* Project object */;
+}
